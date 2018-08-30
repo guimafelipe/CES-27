@@ -58,6 +58,7 @@ func doServerJob(){
 				myclocks.Clocks[i] = m.Clocks[i]
 			}
 		}
+		myclocks.Clocks[id-1]++
 	}
 }
 
@@ -120,7 +121,10 @@ func main() {
 		case x, valid:= <-ch:
 			if valid{
 				dest, _ := strconv.Atoi(x)
-				sendMessage(dest)
+				myclocks.Clocks[id-1]++
+				if dest != id {
+					sendMessage(dest)
+				}
 			} else {
 				fmt.Println("Channel closed!")
 			}
@@ -128,7 +132,6 @@ func main() {
 			time.Sleep(time.Second*1)
 		}
 		time.Sleep(time.Second*1)
-		myclocks.Clocks[id-1]++
 	}
 }
 

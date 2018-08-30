@@ -29,9 +29,6 @@ func PrintError(err error){
 }
 
 func doServerJob(){
-
-	// defer ServerConn.Close()
-
 	buf := make([]byte, 1024)
 
 	for {
@@ -45,7 +42,6 @@ func doServerJob(){
 }
 
 func doClientJob(j int, i int) {
-	// defer Conn.Close()
 	msg := strconv.Itoa(i)
 	i++
 	buf := []byte(msg)
