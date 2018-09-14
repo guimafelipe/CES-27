@@ -57,11 +57,10 @@ func doServerJob(){
 		var msg Message
 		var smsg string
 		smsg = string(buf[:n])
-		fmt.Println(smsg)
 		if smsg == "OK"{
 			nOks++
 		} else {
-			fmt.Println("Mensagem chegou", state)
+			fmt.Println("Mensagem chegou, estado: ", state)
 			err = json.Unmarshal(buf[:n], &msg)
 			if state == 0 {
 				go sendOk(msg.Id)
@@ -192,16 +191,16 @@ func askForResource(){
 		go doClientJob(i, msg)
 	}
 
-	fmt.Println("Chegou aqui")
 	for nOks < nServers - 1 {
 
 	}
 
-	fmt.Println("Entrando no estado 2")
+	fmt.Println("Usando a CS")
 	state = 2
 	//Using
 	_,err := ResConn.Write(msg)
 	time.Sleep(time.Second*2)
+	fmt.Println("Terminei de usar a CS")
 
 	state = 0
 	//Releasing
@@ -219,4 +218,5 @@ func askForResource(){
 func sendOk(clid int){
 	buf := []byte("OK")
 	CliConn[clid].Write(buf)
+	fmt.Println("Enviando ok para ", clid)
 }

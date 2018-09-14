@@ -36,6 +36,6 @@ func main(){
 		}
 		var msg Message
 		err = json.Unmarshal(buf[:n], &msg)
-		fmt.Println(buf[:n])
+		fmt.Println("Processo ",msg.Id, " me usando agora, com clock ",msg.Clock)
 	}
 }
