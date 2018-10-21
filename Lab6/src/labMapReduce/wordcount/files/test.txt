@@ -1,0 +1,34 @@
+The field of distributed computing covers all aspects of computing and information
+access across multiple processing elements connected by any form of
+communication network, whether local or wide-area in the coverage. Since
+the advent of the Internet in the 1970s, there has been a steady growth of
+new applications requiring distributed processing. This has been enabled by
+advances in networking and hardware technology, the falling cost of hardware,
+and greater end-user awareness. These factors have contributed to
+making distributed computing a cost-effective, high-performance, and faulttolerant
+reality. Around the turn of the millenium, there was an explosive
+growth in the expansion and efficiency of the Internet, which was matched
+by increased access to networked resources through the World Wide Web,
+all across the world. Coupled with an equally dramatic growth in the wireless
+and mobile networking areas, and the plummeting prices of bandwidth and
+storage devices, we are witnessing a rapid spurt in distributed applications and
+an accompanying interest in the field of distributed computing in universities,
+governments organizations, and private institutions.
+Advances in hardware technology have suddenly made sensor networking
+a reality, and embedded and sensor networks are rapidly becoming an integral
+part of everyone’s life – from the home network with the interconnected
+gadgets to the automobile communicating by GPS (global positioning system),
+to the fully networked office with RFID monitoring. In the emerging global
+village, distributed computing will be the centerpiece of all computing and
+information access sub-disciplines within computer science. Clearly, this is
+a very important field. Moreover, this evolving field is characterized by a
+diverse range of challenges for which the solutions need to have foundations
+on solid principles.
+The field of distributed computing is very important, and there is a huge
+demand for a good comprehensive book. This book comprehensively covers
+all important topics in great depth, combining this with a clarity of explanation
+and ease of understanding. The book will be particularly valuable to the
+academic community and the computer industry at large. Writing such a
+comprehensive book has been a Herculean task and there is a deep sense of
+satisfaction in knowing that we were able complete it and perform this service
+to the community.
